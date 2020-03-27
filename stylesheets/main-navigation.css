@@ -1,0 +1,154 @@
+@keyframes scale {
+  0% {
+      opacity: 0;
+      transform: scale(0);
+  }
+  50% {
+      opacity: 0.5;
+      transform: scale(1);
+  }
+  100% {
+      opacity:1;
+  }
+}
+
+.main-navigation {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.8);
+  padding: 20px;
+  z-index: 1;
+}
+
+.main-navigation--up {
+  display: unset;
+  animation: scale 0.5s ;
+  transition: 2s;
+}
+
+.main-navigation__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.main-navigation__logo-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 140%;
+  display: flex;
+  align-items: center;
+}
+
+.main-navigation__items {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  transition: 0.5s;
+  transition-property: opacity, transform;
+}
+
+.main-navigation__item {
+  margin-left: 40px;
+}
+
+@media (max-width: 1199px) {
+  .main-navigation__item {
+    margin-left: 30px;
+  }
+}
+
+.main-navigation__link {
+ color: white;
+ text-decoration: none;
+ text-transform: uppercase;
+ font-weight: bold;
+}
+
+.main-navigation__link:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+
+.main-navigation__link-image {
+  width: 20px;
+}
+
+.main-navigation__button {
+  display: none;
+}
+
+.main-navigation__button-img {
+  width: 60%;
+}
+
+.main-navigation__logo-image {
+    width: 70px;
+    margin-right: 10px;
+  }
+
+
+@media (max-width: 991px) {
+  .main-navigation__logo-link {
+    font-size: 120%;
+  }
+
+  .main-navigation__logo-image {
+    width: 50px;
+    margin-right: 10px;
+  }
+
+  .main-navigation__items {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50vh;
+    background-color: rgba(0,0,0,0.9);
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transform:translateY(-50%);
+  }
+
+  .main-navigation__items-open {
+    opacity: 1;
+    pointer-events: unset;
+    transform: unset;
+  }
+
+  .main-navigation__item {
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+
+  .main-navigation__link {
+   font-size: 120%;
+  }
+
+  .main-navigation__link:hover {
+    border-bottom: unset;
+  }
+
+  .main-navigation__inner {
+    max-width: 90%;
+  }
+
+  .main-navigation__button {
+    display: block;
+    padding: 0;
+    background: none;
+    border: none;
+  }
+}
+
+

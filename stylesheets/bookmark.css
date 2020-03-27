@@ -1,0 +1,65 @@
+.bookmark {
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 7vh 8vw;
+  position: relative;
+  z-index: 0;
+}
+
+.bookmark::after {
+  background-color: rgba(0,0,0,0.7);
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1
+}
+
+.bookmark-header {
+  padding: 0;
+  margin: 0;
+  font-size: 60px;
+}
+
+.bookmark-header::before,
+.bookmark-header::after {
+  content: " - "
+}
+
+
+.bookmark-description {
+  padding: 0;
+  font-size: 20px;
+}
+
+.bookmark--gallery {
+  background-image: url(../images/bookmarks/gallery.jpg);
+}
+
+.bookmark--menu {
+  background-image: url(../images/bookmarks/menu.jpg);
+}
+
+.bookmark--map {
+  background-image: url(../images/bookmarks/route.jpg);
+}
+
+.bookmark--contact {
+  background-image: url(../images/bookmarks/contact.jpg);
+}
+
+@media (max-width: 1199px) {
+  .bookmark-header {
+    font-size: 6vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .bookmark-description {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Polskie smaki - Najlepsza restauracja w mieście!</title>
+  <meta name="description" content="Zapraszamy do najlepszej restauracji w mieście. Odziewdź nas i przekonaj się sam!">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheets/global.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/main-banner.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/about-us.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/main-navigation.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/bookmark.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/gallery.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/contact.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/menu.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="main-navigation">
+    <div class="main-navigation__inner">
+      <div class="main-navigation__logo">
+        <a href="#" class="main-navigation__logo-link">
+          <img src="images/logo.svg" alt="logo" class="main-navigation__logo-image">
+          Polskie Smaki
+        </a>
+      </div>
+      <ul class="main-navigation__items" id="menu">
+        <li class="main-navigation__item">
+          <a href="#about-us" class="main-navigation__link">
+            O nas
+          </a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#menu-link" class="main-navigation__link">
+            Menu
+          </a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#gallery" class="main-navigation__link">
+            Galeria
+          </a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#contact" class="main-navigation__link">
+            Kontakt
+          </a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#map" class="main-navigation__link">
+            Jak dojechać
+          </a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="https://instagram.com" target="_blank" class="main-navigation__link">
+            <img src="images/icons/social/instagram.svg" alt="instagram" class="main-navigation__link-image">
+          </a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="https://facebook.com" class="main-navigation__link">
+            <img src="images/icons/social/facebook.svg" target="_blank" alt="facebook" class="main-navigation__link-image">
+          </a>
+        </li>
+      </ul>
+      <button class="main-navigation__button" id="button">
+        <img src="images/icons/navigation.svg" alt="menu" class="main-navigation__button-img">
+      </button>
+    </div>
+  </nav>
+  <script type="text/javascript" src="js/main-navigation.js"></script>
+  <section class="main-banner">
+    <a href="#about-us" class="main-banner__link">
+      poznaj nas
+    </a>
+  </section>
+  <div class="conatiner">
+    <section class="about_us" id="about-us">
+      <div class="about_us__text">
+        <h3 class="about_us__header">nie jesteśmy tylko restauracją</h3>
+        <p class="about_us__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus nisi aspernatur facere similique debitis voluptatum cumque impedit consequatur consequuntur beatae cum modi, cupiditate vitae dolor eius qui illo deleniti, placeat.</p>
+        <p class="about_us__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptates, consectetur consequatur ea deserunt cumque quas ipsa corporis ad, provident tempore quam dolorem suscipit obcaecati eaque officia rem autem quia?</p>
+      </div>
+      <img src="images/about-us.jpg" class="about_us__img">
+    </section>
+  </div>
+  <section class="bookmark bookmark--menu" id="menu-link">
+    <h2 class="bookmark-header">MENU</h2>
+    <p class="bookmark-description">Spójrz, co dla Ciebie przygotowaliśmy</p>
+  </section>
+  <div class="menu">
+    <div class="menu-inner">
+      <img src="images/menu1.jpg" class="menu-image">
+      <img src="images/menu2.jpg" class="menu-image">
+      <img src="images/menu3.jpg" class="menu-image">
+    </div>
+  </div>
+  <section class="bookmark bookmark--gallery" id="gallery">
+    <h2 class="bookmark-header">GALERIA</h2>
+    <p class="bookmark-description">Tak wyglądają nasze posiłki</p>
+  </section>
+  <div class="gallery">
+    <div class="gallery-inner">
+      <img src="images/gallery/1.jpg" class="gallery-img">
+      <img src="images/gallery/2.jpg" class="gallery-img">
+      <img src="images/gallery/3.jpg" class="gallery-img">
+      <img src="images/gallery/4.jpg" class="gallery-img">
+      <img src="images/gallery/5.jpg" class="gallery-img">
+      <img src="images/gallery/6.jpg" class="gallery-img">
+      <img src="images/gallery/7.jpg" class="gallery-img">
+      <img src="images/gallery/8.jpg" class="gallery-img">
+      <img src="images/gallery/9.jpg" class="gallery-img">
+    </div>
+  </div>
+  <section class="bookmark bookmark--contact" id="contact">
+    <h2 class="bookmark-header">KONTAKT</h2>
+    <p class="bookmark-description">Porozmawiaj z nami</p>
+  </section>
+  <div class="contact">
+    <div class="contact-inner">
+      <div class="contact-header">
+        <a href="mailto:kontakt@restauracja.pl" class="contact-header__link">
+          <img src="images/icons/envelope.svg" class="contact-header__img">
+          kontakt@restauracja.pl
+        </a>
+        <a href="tel:889491219" class="contact-header__link" >
+          <img src="images/icons/phone.svg" class="contact-header__img">
+          889 491 219
+        </a>
+      </div>
+      <div class="contact-description">
+        Jeśli nie znalazłeś na naszej stronie potrzebnych informacji, skontaktuj się z nami i dowiedz się więcej!<br/>
+        Możesz skorzystać z naszego formularza !
+      </div>
+      <form action="" method="get" class="contact-form">
+        <div class="contact-form__name">
+          <input type="text" name="name" id="name" placeholder="IMIĘ I NAZWISKO" required>
+          <input type="email" name="email" id="email" placeholder="ADRES E-MAIL" required>
+        </div>
+        <textarea name="text" id="text" placeholder="TREŚĆ" required></textarea>
+        <input type="submit" value="Wyślij" id="submit">
+      </form>
+    </div>
+  </div>
+  <section class="bookmark bookmark--map" id="map">
+    <h2 class="bookmark-header">JAK DOJECHAĆ</h2>
+    <p class="bookmark-description">Łatwo nas znajdziesz</p>
+  </section>
+  <section class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2531.846413496486!2d18.1950003151095!3d50.61139138363712!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4710fddfa8311177%3A0x3d61263c32dda93e!2sOdrodzenia%2021A%2C%2047-180%20Kro%C5%9Bnica!5e0!3m2!1spl!2spl!4v1585244733753!5m2!1spl!2spl" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </section>
+  <section class="footer">
+    <span class="footer-copyright">&copy; by Busik</span>
+  </section>
+  <script type="text/javascript" src="js/navbar.js"></script>
+</body>
+</html>
